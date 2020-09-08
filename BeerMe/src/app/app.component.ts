@@ -10,14 +10,7 @@ import { Router } from '@angular/router';
 
 export class AppComponent {
 
-  constructor(private navegacion: Router) {
-
-  }
-
-  onClick(pRuta) {
-    this.navegacion.navigate([pRuta]);
-
-  }
+  constructor() { }
 
 }
 

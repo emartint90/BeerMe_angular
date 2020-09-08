@@ -1,13 +1,11 @@
-<app-head></app-head>
+<header>
+    <app-head></app-head>
+</header>
 
-<div class="jumbotron jumbotron-fluid">
-  <div class="texto">
-    <h1 class="display-4 font-weight-bold">Hi brewers!</h1>
-    <hr class="display-2 lead">
-    <p>Discover everything related about the beer that you like so much, shall we start?</p>
-    <a class="btn btn-warning text-white" href="#" role="button" (click)="onClick('/buscador')">START</a>
-  </div>
-</div>
-<router-outlet></router-outlet>
+<body>
+    <router-outlet></router-outlet>
+</body>
 
-<app-footer></app-footer>
+<footer>
+    <app-footer></app-footer>
+</footer>

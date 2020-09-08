@@ -4,9 +4,10 @@ import { HomeComponent } from './home/home.component';
 import { BuscadorComponent } from './buscador/buscador.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: '' },
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: 'buscador', component: BuscadorComponent },
-  { path: '**', redirectTo: '' }
+  { path: 'home', component: HomeComponent },
+  { path: '**', redirectTo: 'home' }
 
 ];
 
