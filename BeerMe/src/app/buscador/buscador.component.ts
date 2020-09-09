@@ -21,8 +21,7 @@ export class BuscadorComponent implements OnInit {
     };
 
     searchBtn.addEventListener("click", expand);
+
   }
-
-
 
 }
