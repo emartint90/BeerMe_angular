@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeerMe</title>
+</head>
+
+<body>
+
+    <nav class="navbar bg-light navbar-light navbar-expand-lg">
+        <a class="navbar" id="icono" href="#"><img src="../../../assets/images/logo_icono_beerme_color_sm_1.png"
+                alt="Icono logo Beer Me"></a>
+        <a class="navbar d-none  d-md-block" id="type" href="#"><img
+                src="../../../assets/images/logo_type_beerme_color_sm.png" alt="Letras de Beer Me"></a>
+        <button class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button"></button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li><a class="nav-item nav-link" [routerLink] (click)="onClick('/buscador')">Buscador</a></li>
+                <li><a class="nav-item nav-link" [routerLink] (click)="onClick('/mapa')">Mapa</a></li>
+                <li><a class="nav-item nav-link" [routerLink] (click)="onClick('/login')">Login/SingUp</a></li>
+            </ul>
+        </div>
+
+
+
+
+        <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo01"> -->
+        <!-- <ul class="navbar-nav menu ml-auto">
+            <li><a class="nav-item nav-link text-bold" [routerLink] (click)="onClick('/buscador')">Buscador</a></li>
+            <li><a class="nav-item nav-link text-bold" [routerLink] (click)="onClick('/mapa')">Mapa</a></li>
+            <li><a class="nav-item nav-link text-bold" [routerLink] (click)="onClick('/login')">Login/SingUp</a>
+            </li>
+        </ul> -->
+        <!-- </div> -->
+    </nav>
+
+</body>
+
+</html>

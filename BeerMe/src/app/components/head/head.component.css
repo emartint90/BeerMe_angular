@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0em;
+    box-sizing: border-box;
+}
+
+#icono{
+    
+    padding: 0.825em;
+
+}
+
+#type{
+    /* display: ; */
+margin-left: 0.125em;
+}
+
+ul li a {
+    font-family: var(--fontOdd);
+    /* margin-right:2.125em; */
+    color:#a96b18 ;
+    font-size: 15px;
+    font-weight: bold;
+}
+

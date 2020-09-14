@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;600;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500&family=MuseoModerno:wght@300;400;500;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500;800&display=swap');
+:root {
+    --fontFirst:'Baloo Tammudu 2', cursive;
+    --fontSecond:'Mitr', sans-serif;
+    --fontOdd: 'MuseoModerno', cursive;
+    --colorMarron: #a96b18;
+    --colorBeige: #e6cfad;
+    --colorClaro: #d4a267;
+}
+

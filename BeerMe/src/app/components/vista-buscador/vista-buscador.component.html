@@ -1,0 +1,38 @@
+<p>vista-buscador works!</p>
+<!-- <div class="container">
+    <div class="row">
+        <div class="col col-sm col-md col-lg cervezas">
+            <div class="cerveza" *ngFor="let cerveza of cervezas">
+                <h3>{{cerveza.nombre}} {{cerveza.pais}}</h3>
+                <img [src]="cerveza.imagen" alt="">
+                <p>{{ cerveza.tipo }}</p>
+            </div>
+        </div>
+    </div>
+</div> -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12" *ngFor="let cerveza of cervezas">
+            <div class="card mb-3 justify-content-center">
+                <div class="row no-gutters">
+                    <div class="col col-sm-2 col-md-4 col-lg-6 align-self-center">
+                        <img [src]="'../../../assets/images/beers/' + cerveza.imagen" class="card-img" alt="...">
+                    </div>
+                    <div class="col col-sm-10 col-md-8 col-lg-6">
+                        <div class="card-body">
+                            <h4 class="card-title">Nombre: {{cerveza.nombre}}</h4>
+                            <h4 class="card-title">Tipo: {{cerveza.tipo}}</h4>
+                            <h5 class="card-title">País: {{cerveza.pais}}</h5>
+
+                            <p class="card-text">Descripción: {{cerveza.descripcion}}</p>
+                            <p class="card-text"><small class="text-muted">Cervecera: {{cerveza.cervecera}}</small></p>
+                            <p class="card-text"><small class="text-muted">Alcohol: {{cerveza.graduacion_alcohol}}
+                                    %</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

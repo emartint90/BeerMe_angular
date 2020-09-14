@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+footer{
+    background-color:#a96b18;
+    font-family: var(--fontOdd);
+}
+.container-fluid{
+bottom: 0;
+width: 100%;
+color:#e6cfad;
+padding: 1.125em;
+
+}
+
+

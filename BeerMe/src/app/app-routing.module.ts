@@ -1,13 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { BuscadorComponent } from './buscador/buscador.component';
+import { HomeComponent } from './components/home/home.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
+import { VistaBuscadorComponent } from './components/vista-buscador/vista-buscador.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'home' },
+  { path: '', pathMatch: 'full', redirectTo: '/home' },
   { path: 'buscador', component: BuscadorComponent },
   { path: 'home', component: HomeComponent },
-  { path: '**', redirectTo: 'home' }
+  { path: 'cervezas/:cervezaNombre', component: VistaBuscadorComponent },
+  { path: '**', redirectTo: '/home' }
+
 
 ];
 
