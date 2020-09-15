@@ -10,7 +10,11 @@ const routes: Routes = [
   { path: 'buscador', component: BuscadorComponent },
   { path: 'home', component: HomeComponent },
   { path: 'cervezas/:cervezaNombre', component: VistaBuscadorComponent },
+<<<<<<< HEAD
   { path: 'registro', component: RegistroComponent },
+=======
+  { path: 'cervezas/:cervezasPais', component: VistaBuscadorComponent },
+>>>>>>> feauture_buscador
   { path: '**', redirectTo: '/home' }
 
 
