@@ -3,18 +3,16 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
 import { VistaBuscadorComponent } from './components/vista-buscador/vista-buscador.component';
-import { RegistroComponent } from './components/registro/registro.component';
+import { RegistroUsuariosComponent } from './components/usuarios/registro-usuarios/registro-usuarios.component';
+import { LoginComponent } from './components/usuarios/login/login.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/home' },
   { path: 'buscador', component: BuscadorComponent },
   { path: 'home', component: HomeComponent },
   { path: 'cervezas/:cervezaNombre', component: VistaBuscadorComponent },
-<<<<<<< HEAD
-  { path: 'registro', component: RegistroComponent },
-=======
+  { path: 'usuarios', component: RegistroUsuariosComponent },
   { path: 'cervezas/:cervezasPais', component: VistaBuscadorComponent },
->>>>>>> feauture_buscador
   { path: '**', redirectTo: '/home' }
 
 

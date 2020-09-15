@@ -10,7 +10,8 @@ import { HeadComponent } from './components/head/head.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
 import { VistaBuscadorComponent } from './components/vista-buscador/vista-buscador.component';
-import { RegistroComponent } from './components/registro/registro.component';
+import { RegistroUsuariosComponent } from './components/usuarios/registro-usuarios/registro-usuarios.component';
+import { LoginComponent } from './components/usuarios/login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { RegistroComponent } from './components/registro/registro.component';
     FooterComponent,
     BuscadorComponent,
     VistaBuscadorComponent,
-    RegistroComponent
+    RegistroUsuariosComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
