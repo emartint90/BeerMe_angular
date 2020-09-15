@@ -10,6 +10,7 @@ import { HeadComponent } from './components/head/head.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
 import { VistaBuscadorComponent } from './components/vista-buscador/vista-buscador.component';
+import { RegistroComponent } from './components/registro/registro.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { VistaBuscadorComponent } from './components/vista-buscador/vista-buscad
     HeadComponent,
     FooterComponent,
     BuscadorComponent,
-    VistaBuscadorComponent
+    VistaBuscadorComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
