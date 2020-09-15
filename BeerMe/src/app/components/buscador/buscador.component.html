@@ -1,34 +1,45 @@
 <div class="container">
 
     <div class="row">
-        <div class="col col-md-12 col-lg-12">
-            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-                <label>Por Nombre</label>
-                <input class="form-control" id="buscadorNombre" type="text" [(ngModel)]="nombre">
-                <button class="btn btn-warning" type="button" [routerLink]="['/cervezas',nombre]">
-                    Que empiece la magia
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
+        <!-- <div class="col col-md-12 col-lg-12"> -->
+        <div class=" col-6 col-sm-6 col-md-6 col-lg-6 dch">
+            <label>Por Nombre</label>
+            <input type="search" id="buscadorNombre" [(ngModel)]="nombre">
+            <!-- <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                    <path fill-rule="evenodd"
+                        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                </svg> -->
+            <button class="btn btn-dark" type="button" [routerLink]="['/cervezas',nombre]">
+                Buscar
+                <!-- <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
                             d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
                         <path fill-rule="evenodd"
                             d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
-                    </svg></button>
-            </div>
+                    </svg> -->
+            </button>
         </div>
+
         <div class="col-6 col-sm-6 col-md-6 col-lg-6" [routerLink]="['/cervezas',nombre]">
             <img class="img-fluid" src="../../../assets/images/beer_letras.jpg" alt="letras">
         </div>
 
 
+
         <div class="row">
             <div class="col-6 col-sm-6 col-md-6 col-lg-6">
                 <label>Por País</label>
-                <input type="search" id="buscadorPais">
+                <input type="search" id="buscadorPais" [(ngModel)]="pais">
+                <button class="btn btn-dark" type="button" [routerLink]="['/cervezas', pais]">Buscar</button>
             </div>
             <div class="col-6 col-sm-6 col-md-6 col-lg-6">
                 <img class="img-fluid" src="../../../assets/images/botellasVacias.jpg" alt="">
             </div>
         </div>
     </div>
+    <!-- </div> -->
 </div>

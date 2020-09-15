@@ -4,13 +4,13 @@
     padding: 0;
 }
 footer{
-    background-color:#a96b18;
+    background-color:#dbb787;
     font-family: var(--fontOdd);
 }
 .container-fluid{
 bottom: 0;
 width: 100%;
-color:#e6cfad;
+color:var(--colorMarron);
 padding: 1.125em;
 
 }

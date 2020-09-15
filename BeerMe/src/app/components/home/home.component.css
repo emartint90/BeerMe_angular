@@ -22,21 +22,21 @@ font-family: var(--fontOdd);
 }
 .container-fluid h1{
   margin-top: 1.125em;
-  margin-left: 1.852em;
+  margin-left: 0.852em;
 
 }
 .container-fluid p{
-  margin-left: 5.125em;
+  margin-left: 4.125em;
   font-weight: bold;
 }
 
 
 .buscar{
 position: absolute;
-margin-top:20.250em;
-margin-left:10.125em;
-
-background: #f1af13;
+margin-top:13.250em;
+margin-left:12.125em;
+color: var(--colorBeige);
+background-color: var(--colorClaro);
 /* background-image: url("../../../assets/images/cerveza_grifo.png");
 background-repeat: no-repeat;
 object-fit: cover; */
@@ -55,6 +55,22 @@ cursor: pointer;
 {
 width: 100px; 
 height: 100px;
+}
+
+span{
+  font-family: var(--fontSecond);
+  font-weight: 500;
+  justify-content: center;
+  /* justify-items: center; */
+}
+
+@media (max-width:992px){
+  .container-fluid{
+    margin-top:2.258em;
+  }
+  .buscar{
+    margin-left:27.125em;
+  }
 }
 
 /* Iconos diseñados por <a href="https://www.flaticon.es/autores/those-icons" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a> */

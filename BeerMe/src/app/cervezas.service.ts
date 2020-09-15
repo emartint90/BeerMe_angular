@@ -19,5 +19,9 @@ export class CervezasService {
     return this.httpClient.get<Cerveza[]>(this.baseUrl + '/' + pNombre).toPromise();
   }
 
+  getByPais(pPais): Promise<Cerveza[]> {
+    console.log(pPais);
+    return this.httpClient.get<Cerveza[]>(this.baseUrl + '/' + pPais).toPromise();
 
+  }
 }

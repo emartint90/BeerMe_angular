@@ -21,11 +21,18 @@ export class VistaBuscadorComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedroute.params.subscribe(async params => {
-      console.log("hola");
       console.log(params.cervezaNombre);
       this.cervezas = await this.cervezasService.getByName(params.cervezaNombre)
       console.log(this.cervezas);
-    })
+    });
+
+    this.activatedroute.params.subscribe(async params => {
+      console.log(params.cervezasPais);
+
+      this.cervezas = await this.cervezasService.getByPais(params.cervezasPais)
+      console.log(this.cervezas);
+
+    });
 
 
   }

@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 export class BuscadorComponent implements OnInit {
 
   nombre: string;
+  pais: string;
   cervezas: Cerveza[];
 
   constructor(
@@ -30,6 +31,7 @@ export class BuscadorComponent implements OnInit {
 
   onClick() {
     console.log(this.nombre);
+    console.log(this.pais)
 
 
 

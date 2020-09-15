@@ -5,21 +5,37 @@
 }
 
 #icono{
-    
-    padding: 0.825em;
-
+    padding:0.825em;
 }
-
-#type{
-    /* display: ; */
-margin-left: 0.125em;
-}
+ /* .bg-light{
+    background-color:#dba078 !important; 
+ } */
 
 ul li a {
     font-family: var(--fontOdd);
-    /* margin-right:2.125em; */
-    color:#a96b18 ;
+    color:#a96b18;
     font-size: 15px;
     font-weight: bold;
+    padding:0.125em;
+    margin-left: 12.325em;
 }
 
+.navbarNav{
+    padding: 1.125em;
+}
+
+#menu{
+    padding-right: 1.258em;
+    background-color: var(--colorMarron);
+}
+
+#menu #navbarNav{
+color: white;
+}
+
+@media (max-width:800px){
+    #type{
+        margin-left: 10h.250em;
+    }
+
+}
