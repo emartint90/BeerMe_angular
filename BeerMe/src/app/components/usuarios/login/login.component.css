@@ -1,0 +1,68 @@
+.login-box {
+    position: relative;
+    margin-top: 20.125em;
+    margin-left: 20.125em;
+    /* top: 50%; */
+    /* left: 50%; */
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background-image: url("../../../../assets/images/malta_corte.jpg");
+    background-color:rgba(0,0,0,0.9) ;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px var(--colorClaro);
+    border-radius: 10px;
+  }
+  
+  
+  .login-box h2 {
+    font-family: var(--fontOdd);
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    font-family: var(--fontFirst);
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    font-family: var(--fontFirst);
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #fbf305;
+    font-size: 12px;
+  }
+
+  button{
+      font-family: var(--fontOdd);
+      /* font-weight: bold; */
+      border: solid 2px;
+      margin-left: 7.125em;
+      background-color: var(--colorClaro);
+  }

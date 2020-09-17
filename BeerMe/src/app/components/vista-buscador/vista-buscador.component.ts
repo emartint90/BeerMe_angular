@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Cerveza } from '../../models/cerveza.model';
 import { CervezasService } from '../../cervezas.service';
+import { UtilitiesService } from 'src/app/utilities.service';
 
 
 @Component({
@@ -16,22 +17,17 @@ export class VistaBuscadorComponent implements OnInit {
 
   constructor(
     private cervezasService: CervezasService,
-    private activatedroute: ActivatedRoute
+    private activatedroute: ActivatedRoute,
+    private utilitiesServices: UtilitiesService
   ) { }
 
   ngOnInit(): void {
     this.activatedroute.params.subscribe(async params => {
+      const nombreMay = this.utilitiesServices.capitalize(params.cervezaNombre);
       console.log(params.cervezaNombre);
-      this.cervezas = await this.cervezasService.getByName(params.cervezaNombre)
+      console.log(nombreMay);
+      this.cervezas = await this.cervezasService.getByName(nombreMay);
       console.log(this.cervezas);
-    });
-
-    this.activatedroute.params.subscribe(async params => {
-      console.log(params.cervezasPais);
-
-      this.cervezas = await this.cervezasService.getByPais(params.cervezasPais)
-      console.log(this.cervezas);
-
     });
 
 

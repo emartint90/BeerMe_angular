@@ -1,1 +1,64 @@
 <p>registro-usuarios works!</p>
+
+<!-- <a href="#registroUsuarios">Sign Up</a>
+<a href="#loginUsuarios">Login</a> -->
+
+
+<div id="registroUsuarios">
+    <div class="login-box">
+        <h2>Sign Up</h2>
+        <form [formGroup]="formularioUsuarios" (ngSubmit)="onSubmit()">
+            <div class="user-box">
+                <input type="text" name="" required="" formControlName="nombre">
+                <label>Name</label>
+                <p class="error"
+                    *ngIf="formularioUsuarios.controls.nombre.errors && formularioUsuarios.controls.nombre.touched">
+                    El campo nombre es obligatorio
+                </p>
+            </div>
+
+            <div class="user-box">
+                <input type="text" name="" required="" formControlName="email">
+                <label>Email</label>
+                <p class="error"
+                    *ngIf="formularioUsuarios.controls.email.errors && formularioUsuarios.controls.email.touched">
+
+                    El campo email es obligatorio
+                </p>
+            </div>
+
+            <div class="user-box">
+                <input type="date" name="Date of Birth" required="" formControlName="fecha_nacimiento">
+                <label></label>
+                <p class="error"
+                    *ngIf="formularioUsuarios.controls.fecha_nacimiento.errors?.birthValidator && formularioUsuarios.controls.fecha_nacimiento.touched">
+
+                    Para registrarte tienes que ser mayor de edad. ¡Te esperamos proximamente!
+                </p>
+
+            </div>
+
+            <div class="user-box">
+                <input type="password" name="" required="" formControlName="password">
+                <label>Password</label>
+                <p class="error"
+                    *ngIf="formularioUsuarios.controls.password.errors && formularioUsuarios.controls.password.touched">
+
+                    El campo contraseña es obligatorio
+                </p>
+            </div>
+
+            <div class="user-box">
+                <input type="password" name="" required="" formControlName="repeat_password">
+                <label>Repeat Password</label>
+                <p class="error"
+                    *ngIf="formularioUsuarios.controls.repeat_password.errors && formularioUsuarios.controls.repeat_password.touched">
+
+                    Ambos campos deben ser iguales ¡prueba otra vez!
+                </p>
+            </div>
+            <button class="btn btn-light text-white">Submit</button>
+
+        </form>
+    </div>
+</div>

@@ -16,40 +16,15 @@ export class BuscadorComponent implements OnInit {
   pais: string;
   cervezas: Cerveza[];
 
-  constructor(
-    // private cervezasService: CervezasService,
-    // private activatedroute: ActivatedRoute
-  ) { }
+  constructor() { }
 
   ngOnInit() { }
 
-  // ngOnInit(): void {
-  //   this.activatedroute.params.subscribe(async params => {
-  //     this.cervezas = await this.cervezasService.getByName(params.cere)
-  //   })
+
+  // onClick() {
+  //   console.log(this.nombre);
+  //   console.log(this.pais)
   // }
-
-  onClick() {
-    console.log(this.nombre);
-    console.log(this.pais)
-
-
-
-    //  el valor del input recoger con ngModel - 
-
-    //  const cervezaNombre = document.getElementById("buscadorNombre");
-    //  this.nombre = elemento.nodeValue;
-
-
-    // console.log(nombreCerveza);
-
-    //capturar el nombre de html= input.value
-    //comprobaciones
-
-    //preguntar a cervezasService
-    //se devuelve una cerveza
-    //represento cerveza 
-  }
 
 }
 

@@ -12,4 +12,13 @@ export class UsuariosService {
     private httpClient: HttpClient) {
     this.baseUrl = 'http://localhost:3000/api/usuarios'
   }
+
+  signUp(formsValues): Promise<any> {
+    // return this.httpClient.post<any>(this.baseUrl + '/registro' + formsValues).toPromise();
+    return this.httpClient.post<any>(`${this.baseUrl}/registro`, formsValues).toPromise();
+  }
+
+  login(formsValues): Promise<any> {
+    return this.httpClient.post(`${this.baseUrl}/login`, formsValues).toPromise();
+  }
 }
