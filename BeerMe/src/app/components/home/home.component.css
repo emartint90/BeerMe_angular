@@ -45,16 +45,16 @@ object-fit: cover; */
 display: inline-block;
 border: none;
 padding: 20px;
-width: 75px;
+width:15.125em;
 border-radius: 30px;
-height: 75px;
+height: 3.125em;
 transition: all 0.5s;
 cursor: pointer;
 }
 .buscar:hover
 {
-width: 100px; 
-height: 100px;
+width: 20.125em; 
+height: 6.125em;
 }
 
 span{
@@ -70,6 +70,13 @@ span{
   }
   .buscar{
     margin-left:27.125em;
+  }
+}
+
+@media (max-width:1200px){
+  .buscar{
+    margin-left:20.125em;
+    text-align: center;
   }
 }
 

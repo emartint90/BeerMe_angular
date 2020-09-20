@@ -52,4 +52,13 @@ export class UtilitiesService {
     return resultado;
   }
 
+
+  obtenerIdUsuario() {
+    // utilizar token para obtener usuario?
+    const idUser = localStorage.getItem('idUser')
+    console.log(idUser);
+    return idUser;
+  }
+
 }
+

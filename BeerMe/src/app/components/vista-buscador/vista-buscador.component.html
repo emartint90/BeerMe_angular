@@ -28,7 +28,13 @@
                             <p class="card-text"><small class="text-muted">Cervecera: {{cerveza.cervecera}}</small></p>
                             <p class="card-text"><small class="text-muted">Alcohol: {{cerveza.graduacion_alcohol}}
                                     %</small>
-                            </p>
+                                <a href="http://">
+                                    <p class="card-text" id="love" (click)="onClick(cerveza.id)"><small
+                                            class="text-">Añadir
+                                            cerveza a tus
+                                            favoritos</small>
+                                    </p>
+                                </a>
                         </div>
                     </div>
                 </div>

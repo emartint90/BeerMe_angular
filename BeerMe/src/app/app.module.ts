@@ -13,6 +13,7 @@ import { VistaBuscadorComponent } from './components/vista-buscador/vista-buscad
 import { RegistroUsuariosComponent } from './components/usuarios/registro-usuarios/registro-usuarios.component';
 import { LoginComponent } from './components/usuarios/login/login.component';
 import { VistaUsuarioComponent } from './components/usuarios/vista-usuario/vista-usuario.component';
+import { RegistroCervezaComponent } from './components/usuarios/registro-cerveza/registro-cerveza.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { VistaUsuarioComponent } from './components/usuarios/vista-usuario/vista
     VistaBuscadorComponent,
     RegistroUsuariosComponent,
     LoginComponent,
-    VistaUsuarioComponent
+    VistaUsuarioComponent,
+    RegistroCervezaComponent
   ],
   imports: [
     BrowserModule,

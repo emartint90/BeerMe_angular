@@ -5,11 +5,11 @@
         <h2>Login</h2>
         <form [formGroup]="loginUsuarios" (ngSubmit)="onSubmit()">
             <div class="user-box">
-                <input type="text" name="" required="">
+                <input type="text" name="" required="" formControlName="email">
                 <label>Email</label>
             </div>
             <div class="user-box">
-                <input type="password" name="" required="">
+                <input type="password" name="" required="" formControlName="password">
                 <label>Password</label>
             </div>
             <button class="btn btn-light text-white">Acceder</button>

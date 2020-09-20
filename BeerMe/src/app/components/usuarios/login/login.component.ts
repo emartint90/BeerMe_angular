@@ -34,8 +34,9 @@ export class LoginComponent implements OnInit {
     const response = await this.UsuariosService.login(this.loginUsuarios.value);
     if (response['success']) {
       localStorage.setItem('token', response['token']);
+      // localStorage.setItem('idUsuario', response['idUser']);
       alert('Let´s go!');
-      this.router.navigate(['/vista-usuario']);
+      this.router.navigate(['/perfil']);
     }
   }
 
