@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
     if (response['success']) {
       localStorage.setItem('token', response['token']);
       // localStorage.setItem('idUsuario', response['idUser']);
-      alert('Let´s go!');
+      alert('Welcome to BeerMe Comunity');
       this.router.navigate(['/perfil']);
     }
   }

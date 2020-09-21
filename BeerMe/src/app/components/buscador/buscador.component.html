@@ -1,44 +1,52 @@
-<div class="container">
+<div class="buscador">
 
     <div class="row">
         <!-- <div class="col col-md-12 col-lg-12"> -->
-        <div class=" col-6 col-sm-6 col-md-6 col-lg-6 dch">
-            <label>Por Nombre</label>
+        <div class=" col-6 col-sm-6 col-md-6 col-lg-6 contenedor">
+            <label>Busca por Nombre</label>
             <input type="search" id="buscadorNombre" [(ngModel)]="nombre">
-            <!-- <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                        d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
-                    <path fill-rule="evenodd"
-                        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
-                </svg> -->
-            <button class="btn btn-dark" type="button" [routerLink]="['/cervezas',nombre]">
+
+            <button class="btn btn-dark" type="button" [routerLink]="['/cervezas/pais',nombre]">
                 Buscar
-                <!-- <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
-                        <path fill-rule="evenodd"
-                            d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
-                    </svg> -->
+
             </button>
         </div>
 
-        <div class="col-6 col-sm-6 col-md-6 col-lg-6" [routerLink]="['/cervezas',nombre]">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-6" [routerLink]="['/cervezas/pais',nombre]">
             <img class="img-fluid" src="../../../assets/images/beer_letras.jpg" alt="letras">
         </div>
 
 
 
-        <div class="row">
+        <div class="row fila">
             <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-                <label>Por País</label>
-                <input type="search" id="buscadorPais" [(ngModel)]="pais">
-                <button class="btn btn-dark" type="button" [routerLink]="['/cervezas', pais]">Buscar</button>
+
+                <img class="img-fluid" src="../../../assets/images/flags.jpg" alt="">
             </div>
-            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-                <img class="img-fluid" src="../../../assets/images/botellasVacias.jpg" alt="">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 contenedor">
+                <label>Busca por país</label>
+                <div class="dropdown oop">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Países
+                    </button>
+                    <div class="dropdown-menu " aria-labelledby="dropdownMenuButton" [(ngModel)]="pais">
+                        <a class="dropdown-item" [routerLink]="['/cervezas/pais', 'Spain']">Spain</a>
+                        <a class="dropdown-item" [routerLink]="['/cervezas/pais', 'United Stated']">United Stated</a>
+                        <a class="dropdown-item" [routerLink]="['/cervezas/pais', 'Germany']">Germany</a>
+                        <a class="dropdown-item" [routerLink]="['/cervezas/pais', 'Canada']">Canada</a>
+                        <a class="dropdown-item" [routerLink]="['/cervezas/pais', 'United Kingdom']">United Kingdom</a>
+                        <a class="dropdown-item" [routerLink]="['/cervezas/pais', 'Belgium']">Belgium</a>
+                        <a class="dropdown-item" [routerLink]="['/cervezas/pais', 'Norway']">Norway</a>
+                        <a class="dropdown-item" [routerLink]="['/cervezas/pais', 'Brazil']">Brazil</a>
+                        <a class="dropdown-item" [routerLink]="['/cervezas/pais', 'Poland']">Poland</a>
+                    </div>
+                </div>
+
+                <!-- <input type="search" id="buscadorPais" [(ngModel)]="pais">
+                <button class="btn btn-dark" type="button" [routerLink]="['/cervezas/pais/pais', pais]">Buscar</button> -->
             </div>
+
         </div>
     </div>
     <!-- </div> -->

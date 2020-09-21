@@ -4,18 +4,17 @@ import { Cerveza } from '../../models/cerveza.model';
 import { CervezasService } from '../../cervezas.service';
 import { UtilitiesService } from 'src/app/utilities.service';
 
-
-
 @Component({
-  selector: 'app-vista-buscador',
-  templateUrl: './vista-buscador.component.html',
-  styleUrls: ['./vista-buscador.component.css']
+  selector: 'app-vista-pais',
+  templateUrl: './vista-pais.component.html',
+  styleUrls: ['./vista-pais.component.css']
 })
-export class VistaBuscadorComponent implements OnInit {
+export class VistaPaisComponent implements OnInit {
 
   nombre: string;
   cervezas: Cerveza[];
   errores: any[];
+
   constructor(
     private cervezasService: CervezasService,
     private activatedroute: ActivatedRoute,
@@ -26,10 +25,10 @@ export class VistaBuscadorComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedroute.params.subscribe(async params => {
-      const nombreMay = this.utilitiesServices.capitalize(params.cervezaNombre);
-      // console.log(params.cervezaNombre);
-      // console.log(nombreMay);
-      this.cervezas = await this.cervezasService.getByName(nombreMay);
+      const nombrePais = this.utilitiesServices.capitalize(params.pais);
+      console.log(params.cervezaNombre);
+      console.log(nombrePais);
+      this.cervezas = await this.cervezasService.getByPais(nombrePais);
       this.cervezas.forEach(cer => {
         if (!cer.imagen) {
           cer.imagen = "sirviendoCerveza.jpg";

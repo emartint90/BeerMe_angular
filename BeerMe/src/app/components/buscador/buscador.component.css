@@ -7,11 +7,33 @@
  
 }
 
+#dropdownMenuButton{
+  font-family: var(--fontSecond);
+  font-size: 1.125em;
+  background-color: var(--colorMarron);
+  width: 100px;
+  border: none;
+}
+
+.oop{
+  margin-left: 2em;
+}
+
+.contenedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align-items: center; */
+  
+}
+
 label{
   font-family: var(--fontFirst);
+  font-size: 2em;
   font-weight: bold;
   color: var(--colorClaro);
-  margin-left: 6.250em;
+  /* margin-left: 6.250em; */
+  /* margin-left: 0.5em; */
   padding-top:0.750em;
 }
 
@@ -20,25 +42,38 @@ input{
   margin-top: 1.125em;
   padding: 0.425em;
   margin-left: 2.125em;
-  border-radius: 10%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
   height:4.250em ;
   border-color: var(--colorBeige), 3px;
-  border-style: dotted;
+ 
 }
 
 
 .btn-dark{
   background-color: var(--colorMarron);
   color:white;
+  width: 100px;
   font-family: var(--fontSecond);
+  font-size: 1.125em;
   font-weight: lighter;
-  border-radius: 20px;
-  border-color: black 1px !important;
+  border:none;
+  font-weight: 400;
   padding: 0.236em;
   margin-top:0.525em;
   margin-left: 2.125em;
   
 }
+
+.fila{
+  width:100%
+}
+
+/* .imagen{
+  width: 100%;
+  height: auto;
+} */
 
 /* .dch{
   display:absolute;

@@ -14,6 +14,7 @@ import { RegistroUsuariosComponent } from './components/usuarios/registro-usuari
 import { LoginComponent } from './components/usuarios/login/login.component';
 import { VistaUsuarioComponent } from './components/usuarios/vista-usuario/vista-usuario.component';
 import { RegistroCervezaComponent } from './components/usuarios/registro-cerveza/registro-cerveza.component';
+import { VistaPaisComponent } from './components/vista-pais/vista-pais.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { RegistroCervezaComponent } from './components/usuarios/registro-cerveza
     RegistroUsuariosComponent,
     LoginComponent,
     VistaUsuarioComponent,
-    RegistroCervezaComponent
+    RegistroCervezaComponent,
+    VistaPaisComponent
   ],
   imports: [
     BrowserModule,

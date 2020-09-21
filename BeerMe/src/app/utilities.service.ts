@@ -26,9 +26,9 @@ export class UtilitiesService {
   }
 
 
-  capitalize(pCervezaNombre) {
+  capitalize(pNombre) {
     // Dividido el parametro que me llega (el nombre)  por el separador ' ' (espacio)
-    const palabrasCerveza = pCervezaNombre.split(' ');
+    const palabrasCerveza = pNombre.split(' ');
     let nuevaPalabra, resultado;
     console.log(palabrasCerveza);
     // Recorremos el array de palabras del nombre de la cerveza
@@ -53,12 +53,12 @@ export class UtilitiesService {
   }
 
 
-  obtenerIdUsuario() {
-    // utilizar token para obtener usuario?
-    const idUser = localStorage.getItem('idUser')
-    console.log(idUser);
-    return idUser;
-  }
+  // obtenerIdUsuario() {
+  //   // utilizar token para obtener usuario?
+  //   const idUser = localStorage.getItem('idUser')
+  //   console.log(idUser);
+  //   return idUser;
+  // }
 
 }
 

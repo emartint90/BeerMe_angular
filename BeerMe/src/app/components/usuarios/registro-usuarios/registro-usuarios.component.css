@@ -1,44 +1,22 @@
 
+#registroUsuarios{
 
-/* h1{
-    font-family: var(--fontOdd);
-    color: var(--colorMarron);
-    margin-left: 13.125em;
-}
-.formulario{
-    padding: 3.125em; 
-}
-
-input{
-    
-    border:none;
-    border-bottom: 1px solid;
-    border-color: var(--colorMarron);
-    outline: none;
-    background: transparent;
-    
-}
-
-label{
-    pointer-events: none;
-    transition: .5s;
-} */
-.registroUsuarios{
-    background-color: var(--colorBeige);
+  display:flex;
+  justify-content: center;
+  background-color: #e9ded7;
 }
 
   
   .login-box {
     position: relative;
-    margin-top: 20.125em;
-    margin-left: 20.125em;
+    margin-top: 25.125em;
+    margin-left: 21.125em;
     /* top: 50%; */
     /* left: 50%; */
     width: 400px;
     padding: 40px;
     transform: translate(-50%, -50%);
-    background-image: url("../../../../assets/images/malta_corte.jpg");
-    background:rgba(0,0,0,0.5) ;
+    background-image: url("../../../../assets/images/malta-corte_aclarada.png");
     box-sizing: border-box;
     box-shadow: 0 15px 25px var(--colorClaro);
     border-radius: 10px;
