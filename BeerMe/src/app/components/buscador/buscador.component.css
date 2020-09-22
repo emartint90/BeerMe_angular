@@ -6,6 +6,11 @@
   
  
 }
+/* .buscador{
+  border-right: solid 4px;
+  border-left: solid 4px;
+  border-color: white;
+} */
 
 #dropdownMenuButton{
   font-family: var(--fontSecond);
@@ -69,7 +74,11 @@ input{
 .fila{
   width:100%
 }
-
+/* 
+img{
+  height: 80vh;
+  width: auto;
+} */
 /* .imagen{
   width: 100%;
   height: auto;

@@ -1,3 +1,16 @@
+#registroCerveza{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../../assets/images/trigo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 6em;
+ 
+}
+
+
+
 .login-box {
     position: relative;
     margin-top: 20.125em;
@@ -7,8 +20,9 @@
     width: 400px;
     padding: 40px;
     transform: translate(-50%, -50%);
-    background-image: url("../../../../assets/images/lupulo_verde.webp");
-    background:rgba(0,0,0,0.5) ;
+    background-image: url("../../../../assets/images/malta_corte.jpg");
+
+    /* background:rgba(0,0,0,0.5) ; */
     box-sizing: border-box;
     box-shadow: 0 15px 25px var(--colorClaro);
     border-radius: 10px;

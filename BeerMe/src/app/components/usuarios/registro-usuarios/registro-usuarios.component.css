@@ -3,20 +3,23 @@
 
   display:flex;
   justify-content: center;
-  background-color: #e9ded7;
+  background-image: url("../../../../assets/images/hop-3987576.png");
+
+  
 }
 
   
   .login-box {
     position: relative;
-    margin-top: 25.125em;
+    margin-top: 30.125em;
     margin-left: 21.125em;
     /* top: 50%; */
     /* left: 50%; */
     width: 400px;
     padding: 40px;
     transform: translate(-50%, -50%);
-    background-image: url("../../../../assets/images/malta-corte_aclarada.png");
+    background-image: url("../../../../assets/images/lupulo_horizontal.jpg");
+
     box-sizing: border-box;
     box-shadow: 0 15px 25px var(--colorClaro);
     border-radius: 10px;

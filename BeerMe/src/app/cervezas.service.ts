@@ -42,6 +42,7 @@ export class CervezasService {
   }
 
   createCerveza(formsValues): Promise<any> {
+    console.log(formsValues);
     return this.httpClient.post<any>(`${this.baseUrl}registroCerveza`, formsValues).toPromise();
   }
 

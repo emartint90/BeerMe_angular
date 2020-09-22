@@ -1,43 +1,48 @@
-<p>vista-usuario works!</p>
+<div class="fondo">
+    <div class="perfil">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <a href=""><img [routerLink] (click)="onClick('/registroCerveza')"
+                        src="../../../../assets/images/fabrica_cerveza.jpg" class="card-img" alt="..."></a>
+                <!-- <div class="card-img-overlay"> -->
+                <h1>Registra tu
+                    Cerveza</h1>
+                <p class="card-text">Queremos hacer grande esta comunidad de cerveceros, con un simple registro
+                    conseguiremos llegar a las 2000 cervezas.</p>
 
+                <!-- <div class="card bg-dark text-white"> -->
 
-
-
-<div class="row">
-
-    <div class="card bg-dark text-white">
-        <img src="../../../../assets/images/fin_botella.jpg" class="card-img" alt="...">
-        <div class="card-img-overlay">
-            <h5 class="card-title">Registra la cerveza</h5>
-            <p class="card-text">Queremos hacer grande esta comunidad de cerveceros, con un simple registro
-                conseguiremos llegar a las 2000 cervezas.</p>
-            <p class="card-text">No hace falta que rellenes todos los campos, ya no encargamos nosotras de actualizar y
-                completar las cervezas</p>
-            <a class="nav-item nav-link" [routerLink] (click)="onClick('/registro-cerveza')">Registra tu Cerveza</a>
+                <!-- </div> -->
+            </div>
         </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-12 col-md-4" *ngFor="let cervezasFav of arrayCervezasFav">
 
-        <div class="card">
-            <img [src]="'../../../assets/images/beers/' + cervezasFav.imagen" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h4 class="card-title">Nombre: {{cervezasFav.nombre}}</h4>
-                <p class="card-text">Descripción: {{cervezasFav.descripcion}}</p>
+    <div class="beerlist">
+        <div class="row">
+            <div class="col-12 col-md-4" *ngFor="let cervezasFav of arrayCervezasFav">
+
+                <div class="card">
+                    <img [src]="'../../../assets/images/beers/' + cervezasFav.imagen" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">Nombre: {{cervezasFav.nombre}}</h4>
+                        <p class="card-text">Descripción: {{cervezasFav.descripcion}}</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Tipo: {{cervezasFav.tipo}}</li>
+                        <li class="list-group-item">País: {{cervezasFav.pais}}</li>
+                        <li class="list-group-item">Cervecera: {{cervezasFav.cervecera}}</li>
+                        <li class="list-group-item">Alcohol: {{cervezasFav.graduacion_alcohol}}
+                            %</li>
+                    </ul>
+                    <div class="card-body">
+                        <button type="button" class="btn btn-outline-warning"
+                            (click)="onClick2(cervezasFav.id)">DELETE</button>
+
+                    </div>
+
+                </div>
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Tipo: {{cervezasFav.tipo}}</li>
-                <li class="list-group-item">País: {{cervezasFav.pais}}</li>
-                <li class="list-group-item">Cervecera: {{cervezasFav.cervecera}}</li>
-                <li class="list-group-item">Alcohol: {{cervezasFav.graduacion_alcohol}}
-                    %</li>
-            </ul>
-            <div class="card-body">
-                <button type="button" class="btn btn-outline-warning" (click)="onClick2(cervezasFav.id)">DELETE</button>
-
-            </div>
-
         </div>
     </div>
+
 </div>

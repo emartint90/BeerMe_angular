@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CervezasService } from '../../cervezas.service';
 import { Cerveza } from '../../models/cerveza.model';
-import { FormsModule } from '@angular/forms';
 
 
 @Component({
@@ -16,10 +15,15 @@ export class BuscadorComponent implements OnInit {
   pais: string;
   cervezas: Cerveza[];
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit() { }
 
+  onEnter() {
+    this.router.navigate(['/cervezas/' + this.nombre])
+  }
 
   // onClick() {
   //   console.log(this.nombre);

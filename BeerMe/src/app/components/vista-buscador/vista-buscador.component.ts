@@ -44,12 +44,17 @@ export class VistaBuscadorComponent implements OnInit {
     // const existeFav = await this.cervezasService.getFav(pIdCerveza);
     // console.log(existeFav);
     // if (!existeFav) alert('Esta cerveza ya está entre sus favoritas');
-    const response = await this.cervezasService.postFav(pIdCerveza);
-    if (response['success']) {
-      alert('Ha sido añadida a tus favoritas')
+    if (localStorage.getItem('token')) {
+      const response = await this.cervezasService.postFav(pIdCerveza);
+      if (response['success']) {
+        alert('Ha sido añadida a tus favoritas')
+      } else {
+        this.errores = response;
+      }
     } else {
-      this.errores = response;
+      alert('Tiene que ser usuario para guardar tus favoritas');
     }
+
 
   }
   // this.idCerveza = pIdCerveza;

@@ -70,5 +70,5 @@
   #loginUsuarios{
     display: flex;
     justify-content:center;
-    background-color: #e9ded7;
+    background-image: url("../../../../assets/images/logo_icono_beerme_color_sm.png");
   }

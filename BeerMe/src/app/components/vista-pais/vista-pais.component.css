@@ -1,0 +1,19 @@
+.container-fluid{
+    padding:10px;
+    /* margin-left:200px; */
+    display:flex;
+    justify-items: center;
+    font-family: var(--fontOdd);
+    color: var(--colorMarron);
+    background-color: var(--colorClaro);
+}
+
+.card-img{
+
+    width: 20vw;
+    height: auto;
+    padding: 10px;
+    margin-left: 150px;
+    border-radius: 10px;
+
+}

@@ -4,19 +4,19 @@
         <!-- <div class="col col-md-12 col-lg-12"> -->
         <div class=" col-6 col-sm-6 col-md-6 col-lg-6 contenedor">
             <label>Busca por Nombre</label>
-            <input type="search" id="buscadorNombre" [(ngModel)]="nombre">
+            <input type="search" id="buscadorNombre" [(ngModel)]="nombre" (keyup.enter)="onEnter()">
 
-            <button class="btn btn-dark" type="button" [routerLink]="['/cervezas/pais',nombre]">
+            <button class="btn btn-dark" type="button" [routerLink]="['/cervezas/' + nombre]">
                 Buscar
 
             </button>
         </div>
 
-        <div class="col-6 col-sm-6 col-md-6 col-lg-6" [routerLink]="['/cervezas/pais',nombre]">
-            <img class="img-fluid" src="../../../assets/images/beer_letras.jpg" alt="letras">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+            <img class="img-fluid" src="../../../assets/images/cervezas2.jpg" alt="letras">
         </div>
 
-
+        <!-- [routerLink]="['/cervezas/pais',nombre] -->
 
         <div class="row fila">
             <div class="col-6 col-sm-6 col-md-6 col-lg-6">

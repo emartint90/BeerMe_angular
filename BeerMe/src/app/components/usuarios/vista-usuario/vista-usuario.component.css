@@ -3,8 +3,37 @@
     padding-right: 200px;
     padding-top: 50px;
     padding-bottom: 50px;
+    
+}
+
+.fondo{
+    background-color:var(--colorClaro);
 }
 
 img{
     height: 400px;
+}
+
+.perfil{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-family: var(--fontSecond);
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+}
+
+.perfil a{
+    font-size: 2.5em;
+    font-weight: 700;
+    font-family: var(--fontOdd);
+    display: flex;
+    color: var(--colorMarron);
+}
+
+.perfil p{
+    margin-left: 1.125em;
+    font-size: 1.125em;
 }
